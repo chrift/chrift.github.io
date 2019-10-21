@@ -1,19 +1,19 @@
 (function () {
-	"use strict";
+  'use strict'
 
-	const fadeLoads = document.querySelectorAll(".fadeLoad");
+  const fadeLoads = document.querySelectorAll('.fadeLoad')
 
-	const fadeIn = function fadeIn(eleIndex) {
-		let ele = fadeLoads[eleIndex];
+  function fadeIn (eleIndex) {
+    let ele = fadeLoads[eleIndex]
 
-		if (!ele) return;
+    if (!ele) return
 
-		ele.className += " loaded";
+    ele.className += ' loaded'
 
-		setTimeout(function () {
-			return fadeIn(eleIndex + 1);
-		}, 100);
-	};
+    setTimeout(function () {
+      return fadeIn(eleIndex + 1)
+    }, 100)
+  }
 
-	fadeIn(0);
-})();
+  fadeIn(0)
+})()
