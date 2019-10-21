@@ -4,7 +4,7 @@
   const fadeLoads = document.querySelectorAll('.fadeLoad')
 
   function fadeIn (eleIndex) {
-    let ele = fadeLoads[eleIndex]
+    const ele = fadeLoads[eleIndex]
 
     if (!ele) return
 
